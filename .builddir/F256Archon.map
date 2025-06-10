@@ -1,0 +1,305 @@
+     VMA      LMA     Size Align Out     In      Symbol
+       0        0        0     1 PROVIDE(__stack = 0xC000)
+       0        0        0     1 PROVIDE(__f256_start = 0x300)
+       0        0        0     1 PROVIDE(__BLOCK_SIZE = 0x2000)
+       0        0        0     1 PROVIDE(__SLOT_ADDR = 0xC000)
+       0        0        0     1 __rc0 = 0x10
+       0        0        0     1 __rc1 = __rc0 + 1
+       0        0        0     1 PROVIDE(__rc2 = __rc1 + 1)
+       0        0        0     1 __rc3 = __rc2 + 1
+       0        0        0     1 PROVIDE(__rc4 = __rc3 + 1)
+       0        0        0     1 __rc5 = __rc4 + 1
+       0        0        0     1 PROVIDE(__rc6 = __rc5 + 1)
+       0        0        0     1 __rc7 = __rc6 + 1
+       0        0        0     1 PROVIDE(__rc8 = __rc7 + 1)
+       0        0        0     1 __rc9 = __rc8 + 1
+       0        0        0     1 PROVIDE(__rc10 = __rc9 + 1)
+       0        0        0     1 __rc11 = __rc10 + 1
+       0        0        0     1 PROVIDE(__rc12 = __rc11 + 1)
+       0        0        0     1 __rc13 = __rc12 + 1
+       0        0        0     1 PROVIDE(__rc14 = __rc13 + 1)
+       0        0        0     1 __rc15 = __rc14 + 1
+       0        0        0     1 PROVIDE(__rc16 = __rc15 + 1)
+       0        0        0     1 __rc17 = __rc16 + 1
+       0        0        0     1 PROVIDE(__rc18 = __rc17 + 1)
+       0        0        0     1 __rc19 = __rc18 + 1
+       0        0        0     1 PROVIDE(__rc20 = __rc19 + 1)
+       0        0        0     1 __rc21 = __rc20 + 1
+       0        0        0     1 PROVIDE(__rc22 = __rc21 + 1)
+       0        0        0     1 __rc23 = __rc22 + 1
+       0        0        0     1 PROVIDE(__rc24 = __rc23 + 1)
+       0        0        0     1 __rc25 = __rc24 + 1
+       0        0        0     1 PROVIDE(__rc26 = __rc25 + 1)
+       0        0        0     1 __rc27 = __rc26 + 1
+       0        0        0     1 PROVIDE(__rc28 = __rc27 + 1)
+       0        0        0     1 __rc29 = __rc28 + 1
+       0        0        0     1 PROVIDE(__rc30 = __rc29 + 1)
+       0        0        0     1 __rc31 = __rc30 + 1
+       0        0        0     1 
+       0        0        0     1 
+       0        0        0     1 __block8_lma = ( 8<<24)|__SLOT_ADDR
+       0        0        0     1 __block9_lma = ( 9<<24)|__SLOT_ADDR
+       0        0        0     1 __block10_lma = (10<<24)|__SLOT_ADDR
+       0        0        0     1 __block11_lma = (11<<24)|__SLOT_ADDR
+       0        0        0     1 __block12_lma = (12<<24)|__SLOT_ADDR
+       0        0        0     1 __block13_lma = (13<<24)|__SLOT_ADDR
+       0        0        0     1 __block14_lma = (14<<24)|__SLOT_ADDR
+       0        0        0     1 __block15_lma = (15<<24)|__SLOT_ADDR
+       0        0        0     1 __block16_lma = (16<<24)|__SLOT_ADDR
+       0        0        0     1 __block17_lma = (17<<24)|__SLOT_ADDR
+       0        0        0     1 __block18_lma = (18<<24)|__SLOT_ADDR
+       0        0        0     1 __block19_lma = (19<<24)|__SLOT_ADDR
+       0        0        0     1 __block20_lma = (20<<24)|__SLOT_ADDR
+       0        0        0     1 __block21_lma = (21<<24)|__SLOT_ADDR
+       0        0        0     1 __block22_lma = (22<<24)|__SLOT_ADDR
+       0        0        0     1 __block23_lma = (23<<24)|__SLOT_ADDR
+       0        0        0     1 __title_lma = 0x10000
+       0        0        0     1 __title_size = 0x400
+       0        0        0     1 __paltitle_lma = 0x10400
+       0        0        0     1 __paltitle_size = 0x12c00
+       0        0        0     1 __music_lma = 0x50000
+       0        0        0     1 __music_size = 0x1fca
+      30      300        2     1 .zp.data
+      30      300        0     1         __zp_data_start = .
+      30      300        2     1         F256Archon.lto.o:(.zp.data)
+      30      300        1     1                 _MAX_COL
+      31      301        1     1                 _MAX_ROW
+      32      302        0     1 __zp_data_load_start = LOADADDR(.zp.data)
+      32      302        0     1 __zp_data_size = SIZEOF(.zp.data)
+      32       32       28     1 .zp.bss
+      32       32        0     1         __zp_bss_start = .
+      32       32       28     1         F256Archon.lto.o:(.zp.bss)
+      32       32        1     1                 _col
+      33       33        1     1                 _row
+      34       34        c     1                 _BITMAP_BASE
+      40       40        1     1                 _active
+      41       41        4     1                 _PAGE_SIZE
+      45       45        3     1                 _BITMAP_CLUT
+      48       48        1     1                 _tileSize.0
+      49       49        1     1                 _tileSize.1
+      4a       4a        1     1                 _tileSize.2
+      4b       4b        2     1                 __putchar.s
+      4d       4d        7     1                 kernelEventData
+      54       54        1     1                 (anonymous namespace)::initialized
+      55       55        1     1                 (anonymous namespace)::last_free
+      56       56        2     1                 (anonymous namespace)::free_size
+      58       58        2     1                 (anonymous namespace)::free_list
+      5a       5a        0     1 __zp_bss_size = SIZEOF(.zp.bss)
+      5a       5a       57     1 .zp
+      5a       5a       57     1         F256Archon.lto.o:(.zp.noinit)
+     302      302     674c     2 .text
+     302      302        0     1         _init = .
+     302      302        0     1         _start = .
+     302      302        8     1         D:\F256\llvm-mos\f256dev\llvm-mos\bin/../mos-platform/f256/lib\libcrt0.a(init-stack.S.obj):(.init.100)
+     302      302        0     1                 __do_init_stack
+     30a      30a        3     1         D:\F256\llvm-mos\f256dev\llvm-mos\bin/../mos-platform/f256/lib\libcrt0.a(zero-bss.c.obj):(.init.200)
+     30a      30a        0     1                 __do_zero_bss
+     30d      30d        3     1         D:\F256\llvm-mos\f256dev\llvm-mos\bin/../mos-platform/f256/lib\libcrt0.a(zero-zp-bss.c.obj):(.init.200)
+     30d      30d        0     1                 __do_zero_zp_bss
+     310      310        3     1         D:\F256\llvm-mos\f256dev\llvm-mos\bin/../mos-platform/f256/lib\libcrt0.a(copy-zp-data.c.obj):(.init.200)
+     310      310        0     1                 __do_copy_zp_data
+     313      313        3     1         D:\F256\llvm-mos\f256dev\llvm-mos\bin/../mos-platform/common/lib\crt0.o:(.call_main)
+     316      316        3     1         D:\F256\llvm-mos\f256dev\llvm-mos\bin/../mos-platform/f256/lib\libcrt0.a(exit-custom.S.obj):(.after_main)
+     316      316        0     1                 __after_main
+     319      319        0     1         _fini = .
+     319      319        1     1         D:\F256\llvm-mos\f256dev\llvm-mos\bin/../mos-platform/common/lib\crt0.o:(.fini_rts)
+     31a      31a      135     2         F256Archon.lto.o:(.text._ZN12_GLOBAL__N_19FreeChunk6insertEPvj)
+     31a      31a      135     1                 (anonymous namespace)::FreeChunk::insert(void*, unsigned int)
+     450      450       d7     2         F256Archon.lto.o:(.text._ZN12_GLOBAL__N_19FreeChunk6removeEv)
+     450      450       d7     1                 (anonymous namespace)::FreeChunk::remove()
+     527      527       13     1         D:\F256\llvm-mos\f256dev\llvm-mos\bin/../mos-platform/f256/lib\libcrt0.a(zero-bss.c.obj):(.text.__zero_bss)
+     527      527       13     1                 __zero_bss
+     53a      53a       13     1         D:\F256\llvm-mos\f256dev\llvm-mos\bin/../mos-platform/f256/lib\libcrt0.a(zero-zp-bss.c.obj):(.text.__zero_zp_bss)
+     53a      53a       13     1                 __zero_zp_bss
+     54d      54d       17     1         D:\F256\llvm-mos\f256dev\llvm-mos\bin/../mos-platform/f256/lib\libcrt0.a(copy-zp-data.c.obj):(.text.__copy_zp_data)
+     54d      54d       17     1                 __copy_zp_data
+     564      564       35     1         F256Archon.lto.o:(.text.f256Init)
+     564      564       35     1                 f256Init
+     599      599        9     1         F256Archon.lto.o:(.text.kernelReset)
+     599      599        9     1                 kernelReset
+     5a2      5a2      104     1         F256Archon.lto.o:(.text.graphicsReset)
+     5a2      5a2      104     1                 graphicsReset
+     6a6      6a6      17a     1         F256Archon.lto.o:(.text.textReset)
+     6a6      6a6      17a     1                 textReset
+     820      820      236     1         F256Archon.lto.o:(.text.bitmapReset)
+     820      820      236     1                 bitmapReset
+     a56      a56       17     1         F256Archon.lto.o:(.text.tileReset)
+     a56      a56       17     1                 tileReset
+     a6d      a6d       68     1         F256Archon.lto.o:(.text.spriteReset)
+     a6d      a6d       68     1                 spriteReset
+     ad5      ad5       5a     1         F256Archon.lto.o:(.text.fileReset)
+     ad5      ad5       5a     1                 fileReset
+     b2f      b2f       7e     1         F256Archon.lto.o:(.text.randomReset)
+     b2f      b2f       7e     1                 randomReset
+     bad      bad       79     1         F256Archon.lto.o:(.text.mathUnsignedMultiply)
+     bad      bad       79     1                 mathUnsignedMultiply
+     c26      c26       40     1         F256Archon.lto.o:(.text.randomSeed)
+     c26      c26       40     1                 randomSeed
+     c66      c66       7c     1         F256Archon.lto.o:(.text.spriteSetVisible)
+     c66      c66       7c     1                 spriteSetVisible
+     ce2      ce2       e5     1         F256Archon.lto.o:(.text.tileSetVisible)
+     ce2      ce2       e5     1                 tileSetVisible
+     dc7      dc7       db     1         F256Archon.lto.o:(.text.bitmapSetVisible)
+     dc7      dc7       db     1                 bitmapSetVisible
+     ea2      ea2       96     1         F256Archon.lto.o:(.text.textSetDouble)
+     ea2      ea2       96     1                 textSetDouble
+     f38      f38       44     1         F256Archon.lto.o:(.text.textSetCursor)
+     f38      f38       44     1                 textSetCursor
+     f7c      f7c      16a     1         F256Archon.lto.o:(.text.textDefineForegroundColor)
+     f7c      f7c      16a     1                 textDefineForegroundColor
+    10e6     10e6      16a     1         F256Archon.lto.o:(.text.textDefineBackgroundColor)
+    10e6     10e6      16a     1                 textDefineBackgroundColor
+    1250     1250      1e4     1         F256Archon.lto.o:(.text.textClear)
+    1250     1250      1e4     1                 textClear
+    1434     1434       50     1         F256Archon.lto.o:(.text.textGotoXY)
+    1434     1434       50     1                 textGotoXY
+    1484     1484      207     1         F256Archon.lto.o:(.text.graphicsDefineColor)
+    1484     1484      207     1                 graphicsDefineColor
+    168b     168b       99     1         F256Archon.lto.o:(.text.graphicsSetLayerBitmap)
+    168b     168b       99     1                 graphicsSetLayerBitmap
+    1724     1724       1b     1         F256Archon.lto.o:(.text.f256Reset)
+    1724     1724       1b     1                 f256Reset
+    173f     173f       bb     1         F256Archon.lto.o:(.text.FAR_PEEK)
+    173f     173f       bb     1                 FAR_PEEK
+    17fa     17fa       c1     1         F256Archon.lto.o:(.text.FAR_POKE)
+    17fa     17fa       c1     1                 FAR_POKE
+    18bb     18bb       45     1         F256Archon.lto.o:(.text.main)
+    18bb     18bb       45     1                 main
+    1900     1900      149     1         F256Archon.lto.o:(.text.f256main)
+    1900     1900      149     1                 f256main
+    1a49     1a49      231     1         F256Archon.lto.o:(.text.setup)
+    1a49     1a49      231     1                 setup
+    1c7a     1c7a       2a     1         F256Archon.lto.o:(.text.bitmapSetActive)
+    1c7a     1c7a       2a     1                 bitmapSetActive
+    1ca4     1ca4       fd     1         F256Archon.lto.o:(.text.bitmapSetAddress)
+    1ca4     1ca4       fd     1                 bitmapSetAddress
+    1da1     1da1       74     1         F256Archon.lto.o:(.text.bitmapSetCLUT)
+    1da1     1da1       74     1                 bitmapSetCLUT
+    1e15     1e15       b7     1         F256Archon.lto.o:(.text.mathUnsignedAddition)
+    1e15     1e15       b7     1                 mathUnsignedAddition
+    1ecc     1ecc      5b9     1         F256Archon.lto.o:(.text.textPrint)
+    1ecc     1ecc      5b9     1                 textPrint
+    2485     2485       2f     1         F256Archon.lto.o:(.text.__putchar)
+    2485     2485       2f     1                 __putchar
+    24b4     24b4      34e     1         F256Archon.lto.o:(.text.bitmapTitleFallRise)
+    24b4     24b4      34e     1                 bitmapTitleFallRise
+    2802     2802      117     1         F256Archon.lto.o:(.text.midiShutAllChannels)
+    2802     2802      117     1                 midiShutAllChannels
+    2919     2919       4c     1         F256Archon.lto.o:(.text.midiShutUp)
+    2919     2919       4c     1                 midiShutUp
+    2965     2965       f4     1         F256Archon.lto.o:(.text.resetInstruments)
+    2965     2965       f4     1                 resetInstruments
+    2a59     2a59      2bd     1         F256Archon.lto.o:(.text.initMidiRecord)
+    2a59     2a59      2bd     1                 initMidiRecord
+    2d16     2d16       88     1         F256Archon.lto.o:(.text.initBigList)
+    2d16     2d16       88     1                 initBigList
+    2d9e     2d9e      1c2     1         F256Archon.lto.o:(.text.getTotalLeft)
+    2d9e     2d9e      1c2     1                 getTotalLeft
+    2f60     2f60       b3     1         F256Archon.lto.o:(.text.checkKeySkip)
+    2f60     2f60       b3     1                 checkKeySkip
+    3013     3013      139     1         F256Archon.lto.o:(.text.sendAME)
+    3013     3013      139     1                 sendAME
+    314c     314c      37b     1         F256Archon.lto.o:(.text.adjustOffsets)
+    314c     314c      37b     1                 adjustOffsets
+    34c7     34c7      5ac     1         F256Archon.lto.o:(.text.playEmbeddedDim)
+    34c7     34c7      5ac     1                 playEmbeddedDim
+    3a73     3a73      778     1         F256Archon.lto.o:(.text.playmiditype0)
+    3a73     3a73      778     1                 playmiditype0
+    41eb     41eb     14ca     1         F256Archon.lto.o:(.text.playmidi)
+    41eb     41eb     14ca     1                 playmidi
+    56b5     56b5       1b     1         F256Archon.lto.o:(.text.openAllCODEC)
+    56b5     56b5       1b     1                 openAllCODEC
+    56d0     56d0       87     1         F256Archon.lto.o:(.text.setTimer)
+    56d0     56d0       87     1                 setTimer
+    5757     5757       62     1         F256Archon.lto.o:(.text.getTimerAbsolute)
+    5757     5757       62     1                 getTimerAbsolute
+    57b9     57b9       94     1         F256Archon.lto.o:(.text.setTimer0)
+    57b9     57b9       94     1                 setTimer0
+    584d     584d       10     1         F256Archon.lto.o:(.text.resetTimer0)
+    584d     584d       10     1                 resetTimer0
+    585d     585d        6     1         F256Archon.lto.o:(.text.isTimer0Done)
+    585d     585d        6     1                 isTimer0Done
+    5863     5863        5     1         F256Archon.lto.o:(.text.exit)
+    5863     5863        5     1                 exit
+    5868     5868       d1     1         F256Archon.lto.o:(.text._ZN12_GLOBAL__N_13putEcP6Status)
+    5868     5868       d1     1                 (anonymous namespace)::put(char, Status*)
+    5939     5939      10c     1         F256Archon.lto.o:(.text._ZN12_GLOBAL__N_112print_stringEPKcP6Status)
+    5939     5939      10c     1                 (anonymous namespace)::print_string(char const*, Status*)
+    5a45     5a45      bbc     1         F256Archon.lto.o:(.text.printf)
+    5a45     5a45      bbc     1                 printf
+    6601     6601      1cf     1         F256Archon.lto.o:(.text.malloc)
+    6601     6601      1cf     1                 malloc
+    67d0     67d0      190     1         F256Archon.lto.o:(.text.free)
+    67d0     67d0      190     1                 free
+    6960     6960       2c     1         F256Archon.lto.o:(.text.memcpy)
+    6960     6960       2c     1                 memcpy
+    698c     698c       20     1         F256Archon.lto.o:(.text.__memset)
+    698c     698c       20     1                 __memset
+    69ac     69ac       32     1         F256Archon.lto.o:(.text.__mulhi3)
+    69ac     69ac       32     1                 __mulhi3
+    69de     69de       70     1         F256Archon.lto.o:(.text.__mulsi3)
+    69de     69de       70     1                 __mulsi3
+    6a4e     6a4e        0     1         __init_array_start = .
+    6a4e     6a4e        0     1         __init_array_end = .
+    6a4e     6a4e        0     1         __fini_array_start = .
+    6a4e     6a4e        0     1         __fini_array_end = .
+    6a4e     6a4e       a5     1 .rodata
+    6a4e     6a4e        1     1         D:\F256\llvm-mos\f256dev\llvm-mos\bin/../mos-platform/common/lib\libcrt.a(const.S.obj):(.rodata)
+    6a4e     6a4e        0     1                 __set_v
+    6a4f     6a4f        8     1         F256Archon.lto.o:(.rodata.graphicsDefineColor)
+    6a57     6a57       3a     1         F256Archon.lto.o:(.rodata.printf)
+    6a91     6a91       30     1         F256Archon.lto.o:(.rodata.textColors)
+    6a91     6a91       30     1                 textColors
+    6ac1     6ac1       32     1         <internal>:(.rodata.str1.1)
+    6af3     6af3        0     1 .data
+    6af3     6af3        0     1         __data_start = .
+    6af3     6af3        0     1         __data_end = .
+    6af3     6af3        0     1 __data_load_start = LOADADDR(.data)
+    6af3     6af3        0     1 __data_size = SIZEOF(.data)
+    6af3     6af3        1     1 .bss
+    6af3     6af3        0     1         __bss_start = .
+    6af3     6af3        1     1         F256Archon.lto.o:(.bss.kernelError)
+    6af3     6af3        1     1                 kernelError
+    6af4     6af4        0     1         __bss_end = .
+    6af4     6af4        0     1 __bss_size = SIZEOF(.bss)
+    6af4     6af4        0     1 .noinit
+    6af4     6af4        0     1         __heap_start = ALIGN(., 2)
+    6af4     6af4        0     1 end_block8 = .
+    6af4     6af4        0     1 end_block9 = .
+    6af4     6af4        0     1 end_block10 = .
+    6af4     6af4        0     1 end_block11 = .
+    6af4     6af4        0     1 end_block12 = .
+    6af4     6af4        0     1 end_block13 = .
+    6af4     6af4        0     1 end_block14 = .
+    6af4     6af4        0     1 end_block15 = .
+    6af4     6af4        0     1 end_block16 = .
+    6af4     6af4        0     1 end_block17 = .
+    6af4     6af4        0     1 end_block18 = .
+    6af4     6af4        0     1 end_block19 = .
+    6af4     6af4        0     1 end_block20 = .
+    6af4     6af4        0     1 end_block21 = .
+    6af4     6af4        0     1 end_block22 = .
+    6af4     6af4        0     1 end_block23 = .
+   10000    10000      400    16 .title
+   10000    10000      400    16         F256Archon.lto.o:(.title)
+   10000    10000        0     1                 title_start
+   10400    10400        0     1                 title_end
+   10400    10400        0     1 end_title = .
+   10400    10400    12c00    16 .paltitle
+   10400    10400    12c00    16         F256Archon.lto.o:(.paltitle)
+   10400    10400        0     1                 paltitle_start
+   23000    23000        0     1                 paltitle_end
+   23000    23000        0     1 end_paltitle = .
+   50000    50000     1fca    16 .music
+   50000    50000     1fca    16         F256Archon.lto.o:(.music)
+   50000    50000        0     1                 music_start
+   51fca    51fca        0     1                 music_end
+   51fca    51fca        0     1 end_music = .
+       0        0      138     1 .comment
+       0        0      138     1         <internal>:(.comment)
+       0        0      ca0     4 .symtab
+       0        0      ca0     4         <internal>:(.symtab)
+       0        0       72     1 .shstrtab
+       0        0       72     1         <internal>:(.shstrtab)
+       0        0      9e7     1 .strtab
+       0        0      9e7     1         <internal>:(.strtab)
